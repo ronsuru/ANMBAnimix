@@ -27,6 +27,8 @@ This script automates various tasks for the Animix miniapp telegram.
 
 ## Installation
 
+Open Termux app
+
 1. Install Git:
     ```sh
     pkg install git
