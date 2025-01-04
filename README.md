@@ -20,36 +20,36 @@ This script automates various tasks for the Animix miniapp telegram.
 
 ## Installation
 
-Install Git:
+1. Install Git:
     ```sh
     pkg install git
     ```
-Install nodejs:
+2. Install nodejs:
     ```sh
     pkg install nodejs
     ```
-Install nodejs-lts
+3. Install nodejs-lts
     ```sh
     pkg install nodejs-lts
     ```
-Clone the repository:
+4. Clone the repository:
     ```sh
     git clone https://github.com/ronsuru/ANMBAnimix.git
     cd anmbanimix
     ```
-Change Directory:
+5. Change Directory:
     ```sh
     cd anmbanimix
     ```
-Install the required dependencies:
+6. Install the required dependencies:
     ```sh
     npm install
     ```
-Input your user data in `users.txt` file, one user per line;
+7. Input your user data in `users.txt` file, one user per line;
     ```sh
     nano users.txt
     ```
-Run the script:
+8. Run the script:
     ```sh
     npm run start
     ```
