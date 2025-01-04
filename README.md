@@ -42,7 +42,6 @@ This script automates various tasks for the Animix miniapp telegram.
 4. Clone the repository:
     ```sh
     git clone https://github.com/ronsuru/ANMBAnimix.git
-    cd anmbanimix
     ```
 5. Change Directory:
     ```sh
