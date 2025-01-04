@@ -23,6 +23,7 @@ This script automates various tasks for the Animix miniapp telegram.
   
 ![usersData](img/image4.jpg) ![usersData](img/image5.jpg)
 - Press and hold the value, and tap `Copy Value`...
+  ![usersData](img/image6.jpg)
 
 ## Installation
 
