@@ -58,9 +58,9 @@ Open Termux app
     nano users.txt
     ```
     You need to paste the `queryid...` or `user=...` that you copied from Kiwi Browser
-   - ![usersData](img/image7.png) then tap `Paste`
-   - ![usersData](img/image8.png) you can't see all the details but you can tap `↓` down arrow to make sure.
-   - Here's how to exit ![usersData](img/image9.png) Tap `CTRL` then tap `X`
+   - ![usersData](img/image7.jpg) then tap `Paste`
+   - ![usersData](img/image8.jpg) you can't see all the details but you can tap `↓` down arrow to make sure.
+   - Here's how to exit ![usersData](img/image9.jpg) Tap `CTRL` then tap `X`
    - It will ask you Y/N to exit.. tap `Y`
    - It will ask you another question..  tap `CTRL` `M`
    - 
