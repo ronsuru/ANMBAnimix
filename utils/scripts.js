@@ -195,7 +195,7 @@ export async function joinClan(headers, proxy) {
     const data = await requestWithRetry("/public/clan/join", {
         method: "POST",
         headers,
-        body: JSON.stringify({ clan_id: 97 }),
+        body: JSON.stringify({ clan_id: 57 }),
     }, 3, proxy);
     if (data?.result) {
         log.info("Joined clan successfully:", data.result);
