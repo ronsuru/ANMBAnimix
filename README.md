@@ -11,12 +11,17 @@ This script automates various tasks for the Animix miniapp telegram.
 
 ## Prerequisites
 
-- Node.js installed on your machine
-- `users.txt` file containing user data follow instruction below to get:
-- Open Animix miniapp telegram [https://t.me/animix_game_bot](https://t.me/animix_game_bot?startapp=A2veN3aAUJqc)
-- inspect or just F12 find application
-- in session storage find `tgWebAppData` and copy all value. `user=....`
-![usersData](img/image-1.png)
+- Kiwi Browser ( You can download it on Playstore )
+- Termux app ( `https://github.com/termux/termux-app/releases/download/v0.118.1/termux-app_v0.118.1+github-debug_universal.apk` )
+- Open Kiwi Browser, and login your Telegram
+- Open Animix miniapp on web telegram `https://t.me/animix_game_bot`
+- Click the 3 dots ![usersData](img/image1.jpg) then select Developer Tools ![usersData](img/image2.jpg)
+- in developer tools, tap the arrows beside Source ![usersData](img/image3.jpg)
+- Expand the Session Storage and click the tele-game...
+  ![usersData](img/image4.png)
+- in session storage find `tgWebAppData` and copy all value. `user=....` or `query_id....`
+![usersData](img/image4.jpg) ![usersData](img/image5.jpg)
+- Press and hold the value, and tap `Copy Value`...
 
 ## Installation
 
