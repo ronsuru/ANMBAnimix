@@ -20,6 +20,7 @@ This script automates various tasks for the Animix miniapp telegram.
 - Expand the Session Storage and click the tele-game...
   ![usersData](img/image4.png)
 - in session storage find `tgWebAppData` and copy all value. `user=....` or `query_id....`
+  
 ![usersData](img/image4.jpg) ![usersData](img/image5.jpg)
 - Press and hold the value, and tap `Copy Value`...
 
