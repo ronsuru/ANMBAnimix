@@ -7,8 +7,7 @@ This script automates various tasks for the Animix miniapp telegram.
 - **Auto Complete Quests**
 - **Auto Merge Pets**
 - **Auto Claim Rewards**
-- **Support Multy accounts**
-- **Support Proxy Usage**
+- **Support Multi accounts**
 
 ## Prerequisites
 
@@ -21,26 +20,36 @@ This script automates various tasks for the Animix miniapp telegram.
 
 ## Installation
 
-1. Clone the repository:
+Install Git:
     ```sh
-    git clone https://github.com/Zlkcyber/animixBot.git
-    cd animixBot
+    pkg install git
     ```
-
-2. Install the required dependencies:
+Install nodejs:
+    ```sh
+    pkg install nodejs
+    ```
+Install nodejs-lts
+    ```sh
+    pkg install nodejs-lts
+    ```
+Clone the repository:
+    ```sh
+    git clone https://github.com/ronsuru/ANMBAnimix.git
+    cd anmbanimix
+    ```
+Change Directory:
+    ```sh
+    cd anmbanimix
+    ```
+Install the required dependencies:
     ```sh
     npm install
     ```
-3. Input your user data in `users.txt` file, one user per line;
+Input your user data in `users.txt` file, one user per line;
     ```sh
     nano users.txt
     ```
-4. optionally you can use proxy: 
-- paste proxy in `proxy.txt` format `http://username:password@ip:port` 
-    ```sh
-    nano proxy.txt
-    ```
-5. Run the script:
+Run the script:
     ```sh
     npm run start
     ```
