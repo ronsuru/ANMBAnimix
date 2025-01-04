@@ -47,7 +47,7 @@ Open Termux app
     ```
 5. Change Directory:
     ```sh
-    cd anmbanimix
+    cd ANMBAnimix
     ```
 6. Install the required dependencies:
     ```sh
