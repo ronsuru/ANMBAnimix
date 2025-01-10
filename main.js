@@ -9,7 +9,6 @@ import {
     claimMission,
     joinMission,
     fetchPetDnaList,
-    pair,
     checkIn,
     fetchQuestList,
     claimAchievement,
@@ -97,53 +96,6 @@ const getPower = async (headers, proxy) => {
 
     return power;
 }
-const mergePetIds = async (headers, proxy) => {
-    const petIds = await fetchPetDnaList(headers, proxy);
-    if (!petIds.allPetIds || petIds.allPetIds.length < 1) {
-        return;
-    };
-    log.info("Number Available Female Pet:", petIds?.momPetIds?.length || 0);
-    log.info("Number Available Male Pet:", petIds?.dadPetIds?.length || 0);
-
-    if (petIds.momPetIds.length < 1) {
-        log.warn("you don't have any female pets to pair ");
-        return;
-    }
-
-    const moms = [...petIds.momPetIds];
-    const dads = [...petIds.dadPetIds];
-
-    while (moms.length > 0) {
-        const momIndex = Math.floor(Math.random() * moms.length);
-        const dadIndex = Math.floor(Math.random() * dads.length);
-
-        const mom = moms[momIndex];
-        const dad = dads[dadIndex];
-
-        if (mom !== undefined && dad !== undefined) {
-            log.info(`Pair pets ${mom} and ${dad}`);
-            await pair(headers, proxy, mom, dad);
-
-            moms.splice(momIndex, 1);
-            dads.splice(dadIndex, 1);
-            await delay(1);
-        } else if (moms.length > 1 && momIndex + 1 < moms.length) {
-            const nextMom = moms[momIndex + 1];
-
-            if (mom !== nextMom) {
-                log.info(`Pair pets ${mom} and ${nextMom}`);
-                await pair(headers, proxy, mom, nextMom);
-
-                moms.splice(momIndex, 1);
-                moms.splice(momIndex, 1);
-                await delay(1);
-            };
-        } else {
-            log.warn("you don't have any couple to pair.");
-            break;
-        }
-    }
-};
 
 const doMissions = async (headers, proxy) => {
     const petData = await fetchPetList(headers, proxy);
@@ -255,9 +207,6 @@ async function startMission() {
             log.warn("No bonus from gatcha to claim.");
         };
 
-        log.info("Fetching pet mom and dad can pair!");
-        await mergePetIds(headers, proxy);
-        await delay(1);
         try {
             const missionLists = await fetchMissionList(headers, proxy);
 
