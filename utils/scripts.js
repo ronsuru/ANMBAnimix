@@ -165,18 +165,6 @@ export async function claimMission(headers, proxy, missionId) {
     }
 }
 
-// Mix pet
-export async function pair(headers, proxy, mom, dad) {
-    const payload = { dad_id: dad, mom_id: mom };
-    const data = await requestWithRetry("/public/pet/mix", {
-        method: "POST",
-        headers,
-        body: JSON.stringify(payload),
-    }, 3, proxy);
-    const pet = data?.result?.pet || { name: "Unknown", star: 0, class: "Unknown" };
-    const petInfo = { name: pet.name, star: pet.star, class: pet.class };
-    log.info(`Pair pets successfully!! Born:`, JSON.stringify(petInfo));
-}
 
 // Join mission
 export async function joinMission(headers, proxy, payloadMission) {
