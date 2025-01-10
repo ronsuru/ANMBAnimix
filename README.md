@@ -5,7 +5,7 @@ This script automates various tasks for the Animix miniapp telegram.
 - **Auto Join/Claim Missions**
 - **Auto Gatcha New Pets** < REMOVED >
 - **Auto Complete Quests**
-- **Auto Merge Pets**
+- **Auto Merge Pets** < REMOVED >
 - **Auto Claim Rewards**
 - **Support Multi accounts**
 
@@ -43,11 +43,11 @@ Open Termux app
     ```
 4. Clone the repository:
     ```sh
-    git clone https://github.com/ronsuru/ANMBAnimix2.git
+    git clone https://github.com/ronsuru/ANMBAnimix3.git
     ```
 5. Change Directory:
     ```sh
-    cd ANMBAnimix2
+    cd ANMBAnimix3
     ```
 6. Install the required dependencies:
     ```sh
